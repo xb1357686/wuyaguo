@@ -1,0 +1,100 @@
+<!DOCTYPE html><head><meta charset=UTF-8><meta name=viewport content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"><meta name=format-detection content="telephone=no"><meta name=format-detection content="email=no"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta http-equiv=Content-Type content=text/html><meta name=full-screen content=yes><meta name=browsermode content=application><meta name=x5-orientation content=landscale><meta name=x5-fullscreen content=true><meta name=x5-page-mode content=app><meta name=msapplication-tap-highlight content=no><title>乌鸦国传说</title><script>
+  
+  </script>
+
+
+  <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/phaser.min.js"></script>
+
+
+  <script src="src/js/global.js"></script>
+  <script src="src/js/managers/sound-manager.js"></script>
+  <script src="src/js/states/base-state.js"></script>
+  <script src="src/js/states/boot-state.js"></script>
+  <script src="src/js/states/preload-state.js"></script>
+  <script src="src/js/states/menu-state.js"></script>
+  <script src="src/js/states/story-state.js"></script>
+  <script src="src/js/states/start-state.js"></script>
+  <script src="src/js/states/win-state.js"></script>
+  <script src="src/js/main.js"></script>
+
+
+  <style>
+  /** {*/
+  html,body,canvas {
+    margin: 0px;
+    padding: 0px;
+  }
+  html, body, #game {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    background: #08222D;
+    overflow: hidden;
+    background-image: url(imgUrl+"MainPageBg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+
+  }
+
+
+  #game {
+
+    z-index:50;
+
+
+    overflow: hidden;
+  }
+
+  canvas{
+    /*margin:0 auto;*/
+    display: block;
+    touch-action: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*box-shadow: black 0px 0px 100px;*/
+    cursor: inherit;
+
+  }
+
+  #cover{
+
+
+    /*background-color: white;*/
+    height: 100%;
+    width:100%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    /*right: 0;*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:none;
+  }
+
+  .divMask{
+
+    background-color: rgba(0,0,0,.98);
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:-1;
+
+  }
+
+  </style></head><body><div id=cover></div><div id=game class=game></div></body><script>
+
+
+
+
+  $("#cover").click(function(){
+
+    $("#cover").hide();
+
+  });
+
+</script>
